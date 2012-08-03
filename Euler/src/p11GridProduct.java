@@ -10,7 +10,7 @@ import java.io.IOException;
  * @author Allen
  *
  */
-public class GridProduct {
+public class p11GridProduct {
 	
 	/**
 	 * @param args
