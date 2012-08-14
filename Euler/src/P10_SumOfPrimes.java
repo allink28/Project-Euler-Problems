@@ -1,13 +1,11 @@
 /**
  * The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
  * Find the sum of all the primes below two million.
- */
-
-/**
+ * 
  * @author Allen
  *
  */
-public class SumOfPrimes {
+public class P10_SumOfPrimes {
 
 	/**
 	 * @param args
@@ -26,18 +24,15 @@ public class SumOfPrimes {
 	
 	/**
 	 * Check if n is a prime number
-	 * Could be made faster if you assume that no even numbers will be passed to it.
-	 * 	In that case, increment by 2s, only dividing by odds.
-	 * @param n 
+	 * @param n An odd number to be checked for primality.
 	 * @return True if n is prime
 	 */
 	public static boolean isPrime(int n){
-		int sqrt = (int) Math.sqrt(n)+1;
-		for (int i=3; i < sqrt;){
+		int sqrt = (int) Math.sqrt(n)+1;//Only check up to Square root of number
+		for (int i=3; i < sqrt; i+=2){//Numbers being checked will only be odd, so don't divide by evens.
 			if (n % i == 0){
 				return false;
-			}
-			i+=2;
+			}			
 		}
 		return true;
 	}

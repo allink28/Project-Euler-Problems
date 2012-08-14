@@ -3,12 +3,12 @@ import java.math.BigInteger;
 /**
  * 215 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
  * 
- * What is the sum of the digits of the number 21000?
+ * What is the sum of the digits of the number 2^1000?
  * 
  * @author Allen Preville
  * 
  */
-public class p16SumDigitsOfHugeNumber {
+public class P16_SumDigitsOfHugeNumber {
 
 	/**
 	 * @param args
@@ -21,7 +21,7 @@ public class p16SumDigitsOfHugeNumber {
 		//number = number.pow(1000);
 		
 		//--- Do it myself way: -------
-		for(int i=0; i<9; ++i){ //This is an efficient way of getting 2^512
+		for(int i=0; i<9; ++i){ //This a very efficient way of getting 2^512
 			number = number.multiply(number);
 		}	
 		BigInteger number2 = new BigInteger("2");

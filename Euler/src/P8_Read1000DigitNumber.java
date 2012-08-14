@@ -6,18 +6,19 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Problem 8
- * Find the greatest product of five consecutive digits in the 1000-digit number.
+ * Problem 8 Find the greatest product of five consecutive digits in the
+ * 1000-digit number.
  * 
- * Strategy: Make a queue to hold the 5 digits that you are looking at. Compare sum to the
- *
+ * 
+ * My Strategy: Make a queue to hold the 5 digits that you are looking at.
+ * Then keep track of max product, along with the index at which it starts.
+ * 
  * @author Allen Preville
- * 
  */
-public class Read1000DigitNumber {
+public class P8_Read1000DigitNumber {
 
 	public static void main(String[] args) {
-		String number = fileReader("problem8");
+		String number = fileReader("problem8.txt");
 
 		int maxIndex = 0, maxProduct = 0;
 		int length = number.length();

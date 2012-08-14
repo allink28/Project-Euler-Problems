@@ -15,7 +15,7 @@ import java.util.Calendar;
  * @author Allen
  * 
  */
-public class p19Sundays {
+public class P19_Sundays {
 
 	/**
 	 * @param args

@@ -18,7 +18,7 @@
  * 
  * @author Allen Preville
  */
-public class p12TriangularNumberDivisors {
+public class P12_TriangularNumberDivisors {
 
 	/**
 	 * @param args

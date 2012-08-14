@@ -26,7 +26,7 @@ import java.io.IOException;
  * @author Allen
  * 
  */
-public class problem67GreatestSumPyramid {
+public class P67_GreatestSumPyramid {
 	public static final int arrayWidth = 100;
 	public static final int arrayHeight = 100;
 	/**

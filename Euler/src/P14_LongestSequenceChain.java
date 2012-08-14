@@ -18,7 +18,7 @@
  * @author Allen Preville 
  */
 
-public class p14LongestSequenceChain {
+public class P14_LongestSequenceChain {
 	
 	public static void main(String[] args){	
 		int[] counts = new int[1000000]; //Memoization. Save already calculated results and reduce problems to them.

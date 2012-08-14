@@ -16,7 +16,7 @@
  * 
  * Author's note: This one is not pretty.
  */
-public class p17CountLetters {
+public class P17_CountLetters {
 
 	/**
 	 * @param args

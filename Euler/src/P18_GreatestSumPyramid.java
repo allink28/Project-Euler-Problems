@@ -18,7 +18,7 @@ import java.io.IOException;
  * @author Allen
  * Dynamic Programming
  */
-public class p18GreatestSumPyramid {
+public class P18_GreatestSumPyramid {
 
 	public static final int arrayWidth = 15;
 	public static final int arrayHeight = 15;

@@ -8,7 +8,7 @@ import java.io.IOException;
  * @author Allen Preville
  *
  */
-public class p13Sum150Numbers {
+public class P13_Sum150Numbers {
 
 	/**
 	 * @param args
