@@ -1,9 +1,5 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashSet;
-import java.util.TreeSet;
 
 /**
  * A perfect number is a number for which the sum of its proper divisors is
