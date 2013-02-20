@@ -12,6 +12,7 @@ public class P7_PrimeFinder {
 	 */
 	public static void main(String[] args) {
 		initializeArray(10001);
+		long begin = System.nanoTime();
 		int n = 5;
 		int index = 2;
 		while(index != 10001){			
@@ -21,7 +22,8 @@ public class P7_PrimeFinder {
 			}			
 			n += 2;
 		}
-		System.out.println((n-2));
+		long end = System.nanoTime();
+		System.out.println((n-2) + " That took "+ (end - begin));
 
 	}
 	
