@@ -5,20 +5,23 @@
  *
  */
 public class P7_PrimeFinder {
+	public static long[] primes;
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int n = 3;		//Skip 2, the only even prime.
-		int primes = 2; //1 and 2 are primes.
-		while(primes != 10001){
-			n += 2; //Only check odd numbers
+		initializeArray(10001);
+		int n = 5;
+		int index = 2;
+		while(index != 10001){			
 			if(isPrime(n)){
-				++primes;
+				primes[index] = n;
+				++index;
 			}			
+			n += 2;
 		}
-		System.out.println(n);
+		System.out.println((n-2));
 
 	}
 	
@@ -28,13 +31,23 @@ public class P7_PrimeFinder {
 	 * @return True if n is prime
 	 */
 	public static boolean isPrime(int n){
-		int sqrt = (int) Math.sqrt(n)+1; //Only check up to Square root of number 
-		for (int i=3; i < sqrt; i+=2){ //Numbers being checked will only be odd, so don't divide by evens.
-			if (n % i == 0){
+		int sqrt = (int) Math.sqrt(n); //Only check up to Square root of number 
+		for (int i=1; primes[i] <= sqrt && i < primes.length; ++i){
+			if ( n % primes[i] == 0 ){
 				return false;
 			}
 		}
 		return true;
+	}
+	
+	/**
+	 * Initializes the prime array with the first 2 primes. 2,3. 
+	 * @param size
+	 */
+	public static void initializeArray(int size){
+		primes = new long[size];
+		primes[0]=2;
+		primes[1]=3;		
 	}
 
 }
