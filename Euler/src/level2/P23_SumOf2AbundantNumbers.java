@@ -1,3 +1,5 @@
+package level2;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 
@@ -61,7 +63,7 @@ public class P23_SumOf2AbundantNumbers {
 		}		
 		System.out.println(sum);
 		long end = System.currentTimeMillis();
-		System.out.println(end-begin);
+		System.out.println("Time in ms: " + (end-begin));
 
 	}
 
