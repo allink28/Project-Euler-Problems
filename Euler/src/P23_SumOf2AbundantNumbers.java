@@ -35,6 +35,7 @@ public class P23_SumOf2AbundantNumbers {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		long begin = System.currentTimeMillis();
 		HashSet<Integer> set = new HashSet<Integer>(10000);
 		ArrayList<Integer> list = findAbundantNumbers(28124);
 		
@@ -57,8 +58,10 @@ public class P23_SumOf2AbundantNumbers {
 			if(!flag){
 				sum+=n;
 			}
-		}
+		}		
 		System.out.println(sum);
+		long end = System.currentTimeMillis();
+		System.out.println(end-begin);
 
 	}
 
