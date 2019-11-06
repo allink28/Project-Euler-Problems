@@ -98,7 +98,12 @@ public class P67_GreatestSumPyramid {
         return array;
     }
 
-    public static void print2dArray(int[][] array) {
+    /**
+     * Print each of the entries of a 'triangle' 2D array
+     *
+     * @param array Array that has 1 entry at row 0, 2 entries at row 1, etc
+     */
+    public static void print2dTriangleArray(int[][] array) {
         for(int y=0; y<arrayWidth; ++y){ //Display 2D array of numbers
 			for(int x=0; x<y+1; ++x){
 				System.out.print(array[x][y] +" ");
